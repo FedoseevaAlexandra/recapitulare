@@ -11,9 +11,11 @@ print(a)
 
 print('a)  afişează pe ecran componentele tabloului la un interval de 5 poziţii;')
 z=a
-z.insert(5,'    ')
+if len(z)>=5:
+   z.insert(5,'    ')
 print(z)
-z.remove('    ')
+if len(z)>=5:
+   z.remove('    ')
 a.reverse()
 print('b)  afişează pe ecran numerele în ordinea inversă a introducerii în calculator:')
 print(a)
